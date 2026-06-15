@@ -47,9 +47,11 @@ class Bgit < Formula
 
     bin.install source_binary => "bgit"
     chmod 0755, bin/"bgit"
+    bin.install_symlink bin/"bgit" => "git-remote-bgit"
   end
 
   test do
     assert_match "usage: bgit", shell_output("#{bin}/bgit help")
+    assert_path_exists bin/"git-remote-bgit"
   end
 end

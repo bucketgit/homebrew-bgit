@@ -1,7 +1,7 @@
 class Bgit < Formula
   desc "Git CLI for repositories stored directly in GCS or S3 buckets"
   homepage "https://bucketgit.com/"
-  version "1.3.7"
+  version "1.3.9"
   license "MIT"
 
   release_tag = version.to_s
@@ -9,24 +9,24 @@ class Bgit < Formula
   on_macos do
     on_arm do
       url "https://github.com/bucketgit/bgit/releases/download/#{release_tag}/bgit-mac-arm64"
-      sha256 "764875645902f4011f3b2259bb9cbbf1a150ee8988c38b18ac4b3e7834294177"
+      sha256 "5b3b4fa776fb9c176cb7c53abea531e95b5b126150058c5f08a2d077b597017a"
     end
 
     on_intel do
       url "https://github.com/bucketgit/bgit/releases/download/#{release_tag}/bgit-mac-amd64"
-      sha256 "68efa84c8bb99f745601416ed8ceea779b923bdd327da714ff200a997c795c81"
+      sha256 "68a2ce1b3b87aa0f5d4e6ce2b3f91453c0441b694c5f807115a635c6b785cd07"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/bucketgit/bgit/releases/download/#{release_tag}/bgit-linux-amd64"
-      sha256 "9e77a8f5662103e300f8157781b811cb339dd2be998b62a71b639c4e85dbb0a2"
+      sha256 "e21dfba831a0d3da294d02024c5a43e880fd6636a076fd3483e7fc327cb60d7a"
     end
 
     on_arm do
       url "https://github.com/bucketgit/bgit/releases/download/#{release_tag}/bgit-linux-arm64"
-      sha256 "e2ec91a03b111105a74ecc0144bc9369ff55d85f0e7d10f59277ea03bed9112d"
+      sha256 "535ef0f9ea074c174172d7ec9d01bfae7ef2dfa4009e71cd2085b43616d041fd"
     end
   end
 
